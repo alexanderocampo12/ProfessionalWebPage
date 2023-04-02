@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alexander Ocampo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Sora:wght@700&family=Work+Sans:ital,wght@0,400;0,700;1,600&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/brands.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/solid.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="toggle-switch.css">
+</head>
+<body>
+  <header>
+      <nav>
+        <h1>Alexander Ocampo</h1>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1Ig35C3NX_kh7Y1J-c7M0GoKSMfJpXIPJ/view?usp=sharing">Resume</a></li>
+          <li><a href="#" onclick ="openPopup()">Contact info</a></li>
+        </ul>
+      </nav>
+      <div class="popup" id="popup">
+        <h2>Email Address: AlexanderOcampo12@gmail.com</h2>
+        <button type="button" onclick ="closePopup()">Close</button>
+      </div>
+
+      <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+      </script>
+      <div class="controls">
+        <label class="toggle-switch">
+          Dark Mode
+          <input type="checkbox" id="dark-mode-toggle">
+          <div class="toggle-switch-border">
+            <div class="toggle-switch-dot"></div>
+          </div>
+        </label>
+      </div>
+    </header>
+  <section class="Bio">
+  <img class= "profile-image" src='https://images2.imgbox.com/3c/6b/zBQhlDjA_o.jpg?download=true'/>
+  <div>
+  <h2>Hello! My name is Alexander Ocampo and I am trying to live and work in a World where Tech reigns supreme.</h2>
+  <p>I graduated from the New York City College of Technology with a degree in computer engineering technology and I am looking for professional opportunities within the fields of computer and software engineering.</p>
+  <a class="btn" href='https://drive.google.com/drive/folders/1-4BkuJa8m-N1IN3uz2uA2gc64FDMB-Vc?usp=sharing' target="blank">See my work</a>
+  </div>
+</section>
+<section>
+  <h2>Recent Work</h2>
+  <article>
+    <div>
+    <h3>COVID Distance Alarm</h3>
+    <p>A real world covid distance alarm that can be used to control crowds in public spaces</p>
+    <strong>Dec 2020</strong>
+    <ul>
+      <li>Developed and implemented software for distance sensors</li>
+      <li>Programmed an LCD display for system feedback</li>
+      <li>Wrote code for LEDs to provide visual cues</li>
+      <li>Designed and generated schematics for the project</li>
+      <li>Produced comprehensive wiring diagrams for efficient and effective wiring</li>
+      <li>Constructed a functional prototype to validate the system's design and performance</li> 
+      </ul>
+      <a href="https://gist.github.com/alexanderocampo12">GitHub Repo</a>
+      </div>
+      <img class= "article-image" src=https://images2.imgbox.com/40/d4/1MZYDEK3_o.jpg?download=true=true/>
+      </article>
+        <article1>  
+    <div>
+    <h3>FIFA World Cup Trivia App(Codecademy Capstone Project)</h3>
+    <p>An Android trivia app based on FIFA World cup stars of the past and present</p>
+    <strong>Dec 2020</strong>
+    <ul>
+      <li>Acquired a comprehensive understanding of wireframing</li>
+      <li>Employed the power of XML to create and define the layout for a simple yet effective user interface</li>
+      <li>Utilized Java to implement simple to semi complex algorithms and logical reasoning to create a functional trivia game</li>
+      <li>Employed Android Studio Integrated Development Environment (IDE) to design, develop, and test the game application.</li>
+      </ul>
+      <a href="https://gist.github.com/alexanderocampo12">GitHub Repo</a>
+      </div>
+      <img class= "article-image1" src=https://images2.imgbox.com/cf/ab/QTA2MkFz_o.jpg?download=true/>
+      </article1>
+      </section>
+      
+      <footer>
+        <a href="https://github.com/alexanderocampo12">GitHub<span class="link-icon"><i class="fa-brands fa-github"></i></span></a>
+        <p class="copywright">© 2023 Alexander Ocampo</p>
+      </footer>
+  <script src="script.js"></script>
+</body>
+</html>
